@@ -31,7 +31,7 @@ class Worker
      * @param callable $function
      * @param string $onError
      */
-    public function register($tube, callable $callable, $onError = '')
+    public function register($tube, $callable, $onError = '')
     {
         $this->_callbacks[$tube] = array(
             'callable' => $callable,
